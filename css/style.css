@@ -2796,18 +2796,18 @@ h6 {
 }
 
 .projects_area .carousel-inner .carousel-item {
-  max-height: 400px;
+  max-height: 46vh;
 }
 
 /* This needs to be the same as above. Chrome thinks you're talking about the img itself when you do height : 100% */
 .projects_area .carousel-inner img {
   max-width: 100%;
-  max-height: 400px;
+  max-height: 46vh;
   margin: 0 auto;
 }
 
 .projects_area video {
-  height: 400px;
+  height: 46vh;
   margin: 0 auto;
   display: block;
 }

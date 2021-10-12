@@ -8,7 +8,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Tim Haygood" />
 	<meta property="og:description" 
-		content="Hi, I'm a recent graduate of UCSC with a Bachelors of Science in Computer Science. I'm a software engineer with a passion for coding and building projects from the ground up." />
+		content="Hi, I'm a software engineer with a passion for coding and automation." />
 	<meta property="og:url" content="https://tjhaygood.github.io" />
 	<meta property="og:image" content="https://tjhaygood.github.io/img/favicon.png" />
 	<meta name="theme-color" content="#5CDB95">
@@ -112,21 +112,21 @@
 						<div class="progress-bar" 
 						style="width: 80%; background-color: #FF2E00;" ></div>
 					</div>
-					<h5>React.js / Redux.js</h5>
+					<h5>Vue.js / React.js</h5>
 				</div>
 				<div class="col-md" >
 					<div class="progress">
 						<div class="progress-bar" 
 						style="width: 80%; background-color: #CE1483;" ></div>
 					</div>
-					<h5>HTML</h5>
+					<h5>HTML/CSS</h5>
 				</div>
 				<div class="col-md" >
 					<div class="progress">
 						<div class="progress-bar" 
-						style="width: 80%; background-color: #5A0002;" ></div>
+						style="width: 80%; background-color: #FB62F6;" ></div>
 					</div>
-					<h5>CSS</h5>
+					<h5>PHP</h5>
 				</div>
 				
 			</div>
@@ -134,7 +134,7 @@
 				<div class="col-md" >
 					<div class="progress">
 						<div class="progress-bar" 
-						style="width: 80%; background-color: #FB62F6;" ></div>
+						style="width: 80%; background-color: #5A0002;" ></div>
 					</div>
 					<h5>Agile / SCRUM</h5>
 				</div>
@@ -184,12 +184,13 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<h3>Information Security Assistant at UCSC</h3>
-					<p>2019-2020 | Santa Cruz, California</p>
+					<h3>Software Engineer at UCSC</h3>
+					<p>2019-2021 | Santa Cruz, California</p>
 					<ul>
+						<li>Worked with the Web Development Team to rewrite and develop new web applications using mySQL, Laravel for PHP, and Vue.js.</li>
+						<li>Designed and developed web app for capturing lecture recordings via an external API that communicates with hardware devices.</li>
+						<li>Modernized outdated workflow applications written in Drupal by redesigning and rewriting them in Laravel and Vue.js.</li>
 						<li>Built multiple regression testing suites in Python to ensure stability between versions of various university-managed web apps.</li>
-						<li>Wrote several data management scripts using Google Apps Script to automate workflow for numerous coworkers.</li>
-						<li>Organized and managed a large scale simulated phishing campaign to educate roughly 10,000 staff members on up-to-date phishing email tactics.</li>
 					</ul>
 				</div>
 			</div>
@@ -369,17 +370,17 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					<a role="button" data-toggle="modal" data-target="#penPalsModal">
-						<div class="proj_square" id="pen-pals"></div>
-					</a>
-					<h3>Pen Pals</h3>
-				</div>
-				<div class="col">
 					<a role="button" data-toggle="modal" data-target="#ledguiModal">
 						<div class="proj_square" id="led-gui"></div>
 					</a>
 					<h3>LED GUI</h3>
 				</div>				
+				<div class="col">
+					<a role="button" data-toggle="modal" data-target="#penPalsModal">
+						<div class="proj_square" id="pen-pals"></div>
+					</a>
+					<h3>Pen Pals</h3>
+				</div>
 			</div>
 			  
 			  <!-- Discord Bots Modal -->
@@ -602,9 +603,15 @@
 							</ol>
 							<div class="carousel-inner">
 							  <div class="carousel-item active"  data-interval="5000">
-								<img class="d-block" src="./img/projects/pics-demos/ledgui-pic1.jpg" alt="First slide">
+								<img class="d-block" src="./img/projects/pics-demos/ledgui-pic1.png" alt="Desktop view">
 							  </div>
-							  <div class="carousel-item"  data-interval="23000">
+							  <div class="carousel-item"  data-interval="3500">
+								<img class="d-block" src="./img/projects/pics-demos/ledgui-pic2.png" alt="Mobile view">
+							  </div>
+								<div class="carousel-item"  data-interval="3500">
+									<img class="d-block" src="./img/projects/pics-demos/ledgui-pic3.png" alt="Mobile view">
+									</div>
+							  <div class="carousel-item"  data-interval="30000">
 								<video class="video-fluid" fluid>
 									<source src="./img/projects/pics-demos/ledgui-demovid.mp4" type="video/mp4" />
 								</video>
@@ -622,15 +629,18 @@
 						<div class="title">
 							<h2>LED GUI</h2>
 							<div class="tech-svgs">
-								<img src="./img/tech-svgs/java-original.svg" alt="Java" title="Java">
+								<img src="./img/tech-svgs/nodejs-original.svg" alt="Node.js" title="Node.js">
+								<img src="./img/tech-svgs/html5-original.svg" alt="HTML5" title="HTML5">
+								<img src="./img/tech-svgs/jquery-icon.svg" alt="jQuery" title="jQuery">
+								<img src="./img/tech-svgs/raspberry-pi.svg" alt="Raspberry Pi" title="Raspberry Pi">
 							</div>
 						</div>
 					</div>
 					<div class="modal-body project_description">
 						<p>
-							This application, written in Java, is a GUI used to control WS2812B singly-addressable light strips using serial communication with an
-							Arduino Uno. The GUI consists of 8 custom profiles that load color sets and play animations on the light strip. The GUI can also be used
-							to control which lights are turned on, the hue of all lights, and the brightness of all lights.
+							This application is a locally hosted Node.js web application that uses a REST API to control singly addressable WS2812B LED light strips 
+							via serial communication sent through an Arduino Uno, hosted using a Raspberry Pi 4. The GUI consists of 7 custom profiles that load color 
+							sets and play animations on the light strip. The GUI can also be used to control the precise color and brightness of all lights.
 						</p>
 					</div>
 					<div class="modal-footer">
